@@ -85,7 +85,7 @@ const projects = [
       'Gig management workflow',
       'Dashboard and ratings system',
     ],
-    stack: ['React', 'Node.js', 'Supabase', 'Tailwind'],
+    stack: ['React', 'Node.js', 'Supabase', 'Tailwind', 'AI Assistant'],
     live: 'https://gig-flow-smoky.vercel.app',
   },
   {
@@ -111,7 +111,7 @@ const projects = [
       'Cloud storage style interface',
       'User authentication',
     ],
-    stack: ['React', 'Cloud Storage', 'Authentication'],
+    stack: ['React', 'Cloud Storage', 'Authentication', 'File Sharing Environment'],
     live: 'https://cloud-drive-frontend-hazel.vercel.app',
   },
   {
@@ -124,7 +124,7 @@ const projects = [
       'Premium glassmorphic user interface',
       'Interactive booking and exploration flows',
     ],
-    stack: ['React', 'Tailwind CSS', 'Supabase'],
+    stack: ['React', 'Tailwind CSS', 'Supabase', 'AI Assistant'],
     live: 'https://skybound-frontend.vercel.app',
   },
 ]

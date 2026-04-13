@@ -567,9 +567,7 @@ main {
 .tilt-panel {
   transform-style: preserve-3d;
   transform:
-    perspective(1200px)
-    rotateX(var(--rx, 0deg))
-    rotateY(var(--ry, 0deg));
+    perspective(1200px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
   transition: transform 0.18s ease;
 }
 
@@ -580,11 +578,9 @@ main {
   inset: 1px;
   border-radius: inherit;
   background:
-    radial-gradient(
-      circle at calc(var(--px, 0.5) * 100%) calc(var(--py, 0.5) * 100%),
+    radial-gradient(circle at calc(var(--px, 0.5) * 100%) calc(var(--py, 0.5) * 100%),
       rgba(255, 255, 255, 0.045),
-      transparent 32%
-    );
+      transparent 32%);
   pointer-events: none;
 }
 
@@ -730,7 +726,7 @@ main {
 
 .project-link {
   justify-content: space-between;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   color: #f6f4f0;
@@ -879,12 +875,14 @@ main {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 @media (max-width: 1080px) {
+
   .hero,
   .about-grid,
   .contact-grid {
@@ -1117,7 +1115,9 @@ main {
   }
 }
 
-@media (hover: none), (pointer: coarse) {
+@media (hover: none),
+(pointer: coarse) {
+
   .magnetic-button,
   .tilt-panel {
     transform: none !important;
