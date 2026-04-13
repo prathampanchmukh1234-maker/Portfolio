@@ -114,6 +114,19 @@ const projects = [
     stack: ['React', 'Cloud Storage', 'Authentication'],
     live: 'https://cloud-drive-frontend-hazel.vercel.app',
   },
+  {
+    title: 'SkyBound',
+    type: 'Premium Entertainment & Travel Booking App Assistant AI ',
+    description:
+      'The premium all-in-one platform for travel, entertainment, and lifestyle. Redefining how you explore and enjoy the world with a sleek, modern UI.',
+    features: [
+      'Travel and lifestyle platform integration',
+      'Premium glassmorphic user interface',
+      'Interactive booking and exploration flows',
+    ],
+    stack: ['React', 'Tailwind CSS', 'Supabase'],
+    live: 'https://skybound-frontend.vercel.app',
+  },
 ]
 
 const timeline = [
