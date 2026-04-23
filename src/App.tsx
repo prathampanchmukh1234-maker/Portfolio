@@ -127,6 +127,19 @@ const projects = [
     stack: ['React', 'Tailwind CSS', 'Supabase', 'AI Assistant'],
     live: 'https://skybound-frontend.vercel.app',
   },
+  {
+    title: 'Bug Tracker',
+    type: 'Issue Tracking Dashboard',
+    description:
+      'A streamlined bug tracking interface built for logging issues, monitoring progress, and keeping development workflows clear through a focused, modern dashboard experience.',
+    features: [
+      'Create, organize, and prioritize reported issues',
+      'Status-based workflow for active bug resolution',
+      'Clean dashboard layout for faster team visibility',
+    ],
+    stack: ['React', 'Dashboard UI', 'Workflow Management', 'Responsive Design'],
+    live: 'https://bug-tracker-frontend-rho-brown.vercel.app',
+  },
 ]
 
 const timeline = [
