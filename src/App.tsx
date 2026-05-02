@@ -140,6 +140,19 @@ const projects = [
     stack: ['React', 'Dashboard UI', 'Workflow Management', 'Responsive Design'],
     live: 'https://bug-tracker-frontend-rho-brown.vercel.app',
   },
+  {
+    title: 'MeterFlow',
+    type: 'API Metering & Billing Platform',
+    description:
+      'A professional-grade dashboard designed for API observability and monetization, providing real-time insights into API traffic, key management lifecycle, and automated usage-based billing.',
+    features: [
+      'Real-time analytics and system pulse monitoring',
+      'API key and subscription plan management',
+      'Integrated API playground and webhooks',
+    ],
+    stack: ['React', 'Tailwind CSS', 'Vercel', 'Dashboard UI'],
+    live: 'https://meterflow-frontend-weld.vercel.app',
+  },
 ]
 
 const timeline = [
