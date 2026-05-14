@@ -500,7 +500,7 @@ function App() {
                   {imageAvailable ? (
                     <img
                       className="hero-photo"
-                      src="/profile/photo.jpeg"
+                      src="/profile/photo2.jpeg"
                       alt="Pratham Panchmukh portrait"
                       loading="eager"
                       onError={() => setImageAvailable(false)}
@@ -508,7 +508,9 @@ function App() {
                   ) : (
                     <div className="hero-photo hero-photo--fallback">
                       <span>Profile Photo</span>
-                      <strong>Add `public/profile/photo.jpeg` for your portrait</strong>
+                      <strong>Add `<public />
+                        <profile />
+                        <photo2> </photo2>.jpeg` for your portrait</strong>
                     </div>
                   )}
                 </div>
