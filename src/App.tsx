@@ -508,9 +508,7 @@ function App() {
                   ) : (
                     <div className="hero-photo hero-photo--fallback">
                       <span>Profile Photo</span>
-                      <strong>Add `<public />
-                        <profile />
-                        <photo2> </photo2>.jpeg` for your portrait</strong>
+                      <strong>Add `public/profile/photo2.jpeg` for your portrait</strong>
                     </div>
                   )}
                 </div>
