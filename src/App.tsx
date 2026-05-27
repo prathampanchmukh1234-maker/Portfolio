@@ -76,6 +76,19 @@ const skillGroups = [
 
 const projects = [
   {
+    title: 'Sphere',
+    type: 'Planetary Discourse',
+    description:
+      'A platform dedicated to planetary discourse, connecting users globally to discuss and share insights with a clean, modern interface.',
+    features: [
+      'Global discourse and topic sharing',
+      'Interactive user interface',
+      'Responsive design and layout',
+    ],
+    stack: ['React', 'Tailwind CSS', 'Vercel'],
+    live: 'https://sphere-frontend-lovat.vercel.app',
+  },
+  {
     title: 'GigFlow',
     type: 'AI Freelance Marketplace',
     description:
