@@ -554,7 +554,7 @@ function App() {
           <SectionHeader
             eyebrow="About Me"
             title="A builder focused on useful products with cinematic presentation."
-            copy="Pratham is a BCA student at Ajeenkya DY Patil University with a CGPA of 8.0 and graduation in 2026. He is passionate about web development, cloud computing, scalable systems, and shipping real-world applications with polish."
+            copy="Passionate Full-Stack Developer with expertise in web development and cloud technologies, focused on building scalable, high-performance applications and delivering seamless user experiences through innovative solutions."
           />
 
           <div className="about-grid">
