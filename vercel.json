@@ -1,4 +1,10 @@
 {
+    "rewrites": [
+        {
+            "source": "/projects/cognifyz-data-analysis",
+            "destination": "/index.html"
+        }
+    ],
     "headers": [
         {
             "source": "/sitemap.xml",

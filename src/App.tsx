@@ -24,6 +24,7 @@ import {
   Zap,
 } from 'lucide-react'
 import './App.css'
+import CognifyzCaseStudy from './components/CognifyzCaseStudy'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -165,6 +166,45 @@ const projects = [
     ],
     stack: ['React', 'Tailwind CSS', 'Vercel'],
     live: 'https://sphere-frontend-lovat.vercel.app',
+  },
+  {
+    title: 'Root & Ritual',
+    type: 'Ayurvedic Wellness & Beauty Platform',
+    description:
+      'A refined wellness and botanical beauty experience that brings Ayurveda-rooted rituals together with a modern, science-conscious digital storefront.',
+    features: [
+      'Botanical beauty and wellness product discovery',
+      'Modern presentation of Ayurveda-inspired rituals',
+      'Premium, responsive shopping experience',
+    ],
+    stack: ['React', 'E-commerce UI', 'Responsive Design', 'Vercel'],
+    live: 'https://root-ritual-frontend-nu.vercel.app',
+  },
+  {
+    title: 'SK Fitness Gym',
+    type: 'Fitness Center Website',
+    description:
+      'A high-energy website for a Pune fitness center, designed to showcase training programs, facilities, and clear paths for prospective members to get started.',
+    features: [
+      'Weight training, HIIT, yoga, and zumba highlights',
+      'Personal-training service presentation',
+      'Conversion-focused responsive experience',
+    ],
+    stack: ['React', 'Modern UI', 'Responsive Design', 'Vercel'],
+    live: 'https://gym-neon-five.vercel.app',
+  },
+  {
+    title: 'Navidisha Safety Solutions',
+    type: 'Road & Industrial Safety Platform',
+    description:
+      'A professional product platform for a road and industrial safety supplier, making essential safety solutions clear, accessible, and easy to explore.',
+    features: [
+      'Road-safety and industrial-safety product discovery',
+      'Sign boards, barriers, and reflective-tape catalogues',
+      'Trust-building business and service presentation',
+    ],
+    stack: ['React', 'Product Catalogue', 'Responsive Design', 'Vercel'],
+    live: 'https://navi-disha-frontend.vercel.app',
   },
 ]
 
@@ -429,6 +469,10 @@ function App() {
     window.location.href = `mailto:prathampanchmukh1234@gmail.com?subject=${subject}&body=${body}`
   }
 
+  if (window.location.pathname === '/projects/cognifyz-data-analysis') {
+    return <CognifyzCaseStudy />
+  }
+
   return (
     <div className="app-shell" ref={appRef}>
       <div className="cursor-glow" ref={cursorRef} />
@@ -624,11 +668,15 @@ function App() {
             copy="These projects emphasize product thinking, authentication, cloud-connected flows, and practical user experience. Each card has layered depth and interactive tilt to keep the portfolio feeling alive."
           />
 
+          <div className="project-category-heading">
+            <span className="chip">Category A</span>
+            <h3>Web Development Projects</h3>
+          </div>
           <div className="projects-grid">
             {projects.map((project, index) => (
               <TiltPanel className="project-card" key={project.title}>
                 <div className="project-card__header">
-                  <span className="project-index">0{index + 1}</span>
+                  <span className="project-index">{String(index + 1).padStart(2, '0')}</span>
                   <span className="chip">{project.type}</span>
                 </div>
                 <h3>{project.title}</h3>
@@ -660,6 +708,38 @@ function App() {
                 </a>
               </TiltPanel>
             ))}
+          </div>
+
+          <div className="project-category-heading project-category-heading--analytics">
+            <span className="chip">Category B</span>
+            <h3>Data Analytics &amp; Business Intelligence</h3>
+            <p>Transforming raw data into meaningful insights through data exploration, statistical analysis, visualization, and data-driven decision-making.</p>
+          </div>
+          <div className="projects-grid projects-grid--analytics">
+            <TiltPanel className="project-card project-card--analytics">
+              <div className="project-card__header">
+                <span className="project-index">01</span>
+                <span className="chip">Data Analytics Case Study</span>
+              </div>
+              <h3>Cognifyz Technologies – Restaurant Data Analysis</h3>
+              <p>Comprehensive restaurant analysis across cleaning, exploratory analysis, statistical testing, geography, and business intelligence reporting.</p>
+              <img
+                className="analytics-project-preview"
+                src="/cognifyz/visualizations/level-2/L2_T3_ncr_density_hexbin.png"
+                alt="Original restaurant density visualization from the Cognifyz analysis"
+                loading="lazy"
+              />
+              <div className="analytics-project-metrics">
+                <span>9,551+ Records</span><span>15 Countries</span><span>141 Cities</span><span>3 Levels</span><span>10 Tasks</span>
+              </div>
+              <div className="project-stack">
+                {['Python', 'Pandas', 'SciPy', 'Plotly', 'Folium'].map((item) => <span key={item}>{item}</span>)}
+              </div>
+              <a className="project-link" href="/projects/cognifyz-data-analysis">
+                Explore Case Study
+                <ArrowRight size={18} />
+              </a>
+            </TiltPanel>
           </div>
         </section>
 
